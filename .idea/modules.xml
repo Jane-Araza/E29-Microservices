@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Micro.iml" filepath="$PROJECT_DIR$/.idea/Micro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/E29_microservice_cart/E29_microservice_cart/cart.iml" filepath="$PROJECT_DIR$/E29_microservice_cart/E29_microservice_cart/cart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/E29_microservice_product/E29_microservice_product/product.iml" filepath="$PROJECT_DIR$/E29_microservice_product/E29_microservice_product/product.iml" />
+      <module fileurl="file://$PROJECT_DIR$/E29_microservice_user/E29_microservice_user/user.iml" filepath="$PROJECT_DIR$/E29_microservice_user/E29_microservice_user/user.iml" />
+    </modules>
+  </component>
+</project>

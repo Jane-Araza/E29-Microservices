@@ -1,0 +1,35 @@
+//User_table
+CREATE TABLE IF NOT EXISTS public.users
+(
+    user_id bigint NOT NULL DEFAULT nextval('users_user_id_seq'::regclass),
+    email character varying(255) COLLATE pg_catalog."default",
+    first_name character varying(255) COLLATE pg_catalog."default",
+    last_name character varying(255) COLLATE pg_catalog."default",
+    password character varying(255) COLLATE pg_catalog."default",
+    role character varying(255) COLLATE pg_catalog."default",
+    CONSTRAINT users_pkey PRIMARY KEY (user_id)
+)
+
+//product_table
+CREATE TABLE IF NOT EXISTS public.product
+(
+    product_id bigint NOT NULL DEFAULT nextval('product_product_id_seq'::regclass),
+    description character varying(255) COLLATE pg_catalog."default",
+    image_name character varying(255) COLLATE pg_catalog."default",
+    name character varying(255) COLLATE pg_catalog."default",
+    price double precision,
+    quantity integer,
+    user_id bigint,
+    CONSTRAINT product_pkey PRIMARY KEY (product_id)
+)
+
+
+//cart_table
+CREATE TABLE IF NOT EXISTS public.cart
+(
+    cart_id bigint NOT NULL DEFAULT nextval('cart_cart_id_seq'::regclass),
+    product_id bigint,
+    product_quantity bigint,
+    user_id bigint,
+    CONSTRAINT cart_pkey PRIMARY KEY (cart_id)
+)
