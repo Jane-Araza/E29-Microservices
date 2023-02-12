@@ -2,8 +2,8 @@ A microservice application consists of smaller, independent services, each respo
 
 In the case of a microservice application that contains user, product, and cart packages, the following could be the general architecture:
 
-User Package: This package would contain the microservices responsible for handling user-related functionality.
+User Package: This package would contain the microservices responsible for handling user-related functionality, such as authentication, authorization, user information and its role.
 
-Product Package: This package would contain the microservices responsible for handling product-related functionality.
+Product Package: This package would contain the microservices responsible for handling product-related functionality, such as retrieving product information and viewing its description.
 
-Cart Package: This package would contain the microservices responsible for handling shopping cart-related functionality, such as adding products to the cart, calculating cart totals, and handling checkout.
+Cart Package: This package would contain the microservices responsible for handling shopping cart-related functionality, such as adding products to the cart, quantity of the products, product and card id.
